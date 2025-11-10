@@ -1,0 +1,16 @@
+package u3;
+
+public class Ej2 {
+
+  
+    public static void entero(int menor, int mayor) {
+      
+    	for (int i = menor; i <= mayor; i++) { 
+            System.out.println(i);
+        }
+    }
+
+    public static void main(String[] args) {
+        entero(0, 6);
+    }
+}
