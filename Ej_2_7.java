@@ -14,7 +14,7 @@ public class Ej_2_7 {
 		
 	}
 	
-	public static void(String clave1, String clave2) {
+	public static void longitud (String clave1, String clave2) {
 		
 		
 		String mayor = "";
@@ -69,5 +69,6 @@ System.out.println("\n\nPistas para usuario 2:");
 	}
 
 }
+
 
 
