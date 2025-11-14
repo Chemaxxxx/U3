@@ -22,7 +22,7 @@ public class Ej_2_7 {
 			System.out.println("La contraseña correcta es mas larga!");
 			  mayor = clave1;
 		}else if(clave1.length() < clave2.length()) {
-			System.out.println("La contraseña a adivinar es mas larga!");
+			System.out.println("La contraseña correcta es mas corta!");
 			mayor = clave2;
 		}else
 			System.out.println("Las contraseñas tienen la misma longitud!");
@@ -70,3 +70,4 @@ System.out.println("\n\nPistas para usuario 2:");
 	}
 
 }
+
