@@ -14,7 +14,7 @@ public class Ej_2_7 {
 		
 	}
 	
-	public static String longitud(String clave1, String clave2) {
+	public static void(String clave1, String clave2) {
 		
 		
 		String mayor = "";
@@ -27,7 +27,6 @@ public class Ej_2_7 {
 		}else
 			System.out.println("Las contraseñas tienen la misma longitud!");
 		
-		return mayor;
 	}
 	
 	public static void main(String[] args) {
@@ -70,4 +69,5 @@ System.out.println("\n\nPistas para usuario 2:");
 	}
 
 }
+
 
