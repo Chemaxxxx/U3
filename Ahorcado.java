@@ -43,10 +43,13 @@ public static void main(String[] args) {
 		System.out.println(palabra);
 		if (!encontrada)
 			System.out.println("Te quedan " + (MAX_INTENTOS - intentos) + " intentos"  );
+
+		    if(String valueOf(palabra).equals(SECRETA)
+				acertado = true;
 		
 	}while(!acertado && intentos < MAX_INTENTOS );
 	
-	System.out.println("Te has quedado sin intentos!!");
+	
 	
 	
 	//COMPLETAR AQUI!!
@@ -54,5 +57,8 @@ public static void main(String[] args) {
 	
 	if (acertado)
 		System.out.println("Acertaste!!");
+	else
+		System.out.println("Te has quedado sin intentos!!");
 	}
+
 }
