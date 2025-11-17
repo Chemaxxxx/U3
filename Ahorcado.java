@@ -28,30 +28,28 @@ public static void main(String[] args) {
 	do {
 		
 		System.out.print("Introduce una letra:");
+		System.out.print("Introduce una letra:");
 		letra = sc.next().charAt(0);
 		intentos++;
-		
-		if (SECRETA.equals(palabra))
-			acertado = true;
-		
-		for (int i=0;i<SECRETA.length();i++) {
-			if(letra == SECRETA.charAt(i)){
-			palabra [i]  = SECRETA.charAt(i);
-			encontrada = true;
-			}
+
+		for (int i=0; i<SECRETA.length(); i++) {
+		    if (letra == SECRETA.charAt(i)) {
+		        palabra[i] = SECRETA.charAt(i);
+		        encontrada = true;
+		    }
 		}
+
 		System.out.println(palabra);
 
-		cuantasSinAcertar = 0;
-              for(int i = 0; i<palabra.length(i); i++){
-				  if(palabra[i]== '.';)
-					  cuantasSinAcertar++;
-            
-		if (!encontrada)
-			System.out.println("Te quedan " + (MAX_INTENTOS - intentos) + " intentos"  );
+		if (!encontrada) {
+		    System.out.println("Te quedan " + (MAX_INTENTOS - intentos) + " intentos");
+		}
 
-		    if(String valueOf(palabra).equals(SECRETA)
-				acertado = true;
+	
+		if (String.valueOf(palabra).equals(SECRETA)) 
+		    acertado = true;
+		
+
 		
 	}while(!acertado && intentos < MAX_INTENTOS );
 	
