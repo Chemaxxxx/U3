@@ -43,11 +43,10 @@ public static void main(String[] args) {
 		System.out.println(palabra);
 
 		cuantasSinAcertar = 0;
-            for (int i = 0; i < palabra.length; i++) {
                 if (palabra[i] == '.') {
                     cuantasSinAcertar++;
                 }
-            }
+            
 		if (!encontrada)
 			System.out.println("Te quedan " + (MAX_INTENTOS - intentos) + " intentos"  );
 
@@ -69,4 +68,5 @@ public static void main(String[] args) {
 	}
 
 }
+
 
