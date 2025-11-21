@@ -44,6 +44,7 @@ public class Ej9 {
 
         System.out.println("Número de premiados: " + premio);
 
-        sc.close();
+        
     }
 }
+
