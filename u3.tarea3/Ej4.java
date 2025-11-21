@@ -43,19 +43,21 @@ public class Ej4 {
 			intento [i] = Character.getNumericValue(prueba.charAt(i));
 		}
 		
-		while (intento.length != clave.length) {
-			System.out.println("La clave debe de ser de " +  clave.length + " dígitos" );
-			System.out.print("Introduzca de nuevo la contraseña:");
-			 prueba = sc.next();
-			  intento = new int [prueba.length()];
-			for(int i = 0; i< prueba.length(); i++) {
-			intento [i] = Character.getNumericValue(prueba.charAt(i));
 		
-			}
-				
-		}
 		
 		while (!acierto(intento, clave)) {
+			
+			while (intento.length != clave.length) {
+				System.out.println("La clave debe de ser de " +  clave.length + " dígitos" );
+				System.out.print("Introduzca de nuevo la contraseña:");
+				 prueba = sc.next();
+				  intento = new int [prueba.length()];
+				for(int i = 0; i< prueba.length(); i++) {
+				intento [i] = Character.getNumericValue(prueba.charAt(i));
+			
+				}
+					
+			}
 			
 			System.out.println("\n\n Pistas Usuario");
 			
@@ -78,17 +80,7 @@ public class Ej4 {
 			
 			
 			
-			while (intento.length != clave.length) {
-				System.out.println("La clave debe de ser de " +  clave.length + "dígitos" );
-				System.out.print("Introduzca de nuevo la contraseña:");
-				 prueba = sc.next();
-				  intento = new int [prueba.length()];
-				for(int i = 0; i< prueba.length(); i++) {
-				intento [i] = Character.getNumericValue(prueba.charAt(i));
 			
-				}
-					
-			}
 			
 			
 			
