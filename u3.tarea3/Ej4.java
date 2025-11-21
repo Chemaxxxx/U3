@@ -77,13 +77,6 @@ public class Ej4 {
 		
 			}
 			
-			
-			
-			
-			
-			
-			
-			
 		}
 		
 		System.out.println("Acertaste!!");
@@ -93,3 +86,4 @@ public class Ej4 {
 	
 
 }
+
