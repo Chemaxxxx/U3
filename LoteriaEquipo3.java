@@ -1,19 +1,36 @@
-package ud3.reto;
+package reto;
 
 
 import java.util.Scanner;
+import java.util.Random;
 
 
 //Excepción propia
 class GordoException extends Exception {
-	//COMPLETAR
+	public GordoException (String mensaje ) {
+		super(mensaje);
+	} //JMGT
+
 }
 
-public class LoteriaPlantilla {	
+public class LoteriaEquipo3 {	
+	
+	Scanner sc = new Scanner (System.in);
+	Random rand = new Random();
 	
 	//devuelve un array de tamaño numBolas con todos los números del sorteo
 	public static int[] creaBomboNumeros(int numBolas) {
 		//COMPLETAR
+		
+		
+		int numeros [] = new int [99999];
+		
+		for(int i = 0; i< numeros.length; i++);
+		
+		
+		
+		
+		
 	}
 	
 	//devuelve un array de tamaño numPremios con todos los premios del sorteo
@@ -43,13 +60,18 @@ public class LoteriaPlantilla {
 		int numAgraciado = (int) (Math.random()*bombo.length);
 
 		// si el número ya había salido, generamos otro al azar
-
-		//COMPLETAR
+		
+		//JMGT
+	
 		
 		// marcamos el número que ha salido con -1 para que no vuelva a salir
-		bombo[numAgraciado]=-1;
 		
-		//COMPLETAR
+		for(int i = 0; i<bombo.length; i++)
+		bombo[numAgraciado]=-1;
+		if(numAgraciado == -1)
+			numAgraciado = (int) (Math.random()*bombo.length);
+		
+		return numAgraciado;
 	}
 	
 	//devuelve un premio al azar del bombo de premios
