@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class Ej7 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
-		int filas = 3;
-		int columnas = 5;
+		int trimestre = 3;
+		int alumnos = 5;
 		
-		double[][] notas = new double [filas] [columnas];
+		double[][] notas = new double [trimestre] [alumnos];
 		
 		
-		for(int i=0; i<filas; i++) {
-			for(int j = 0; j<columnas; j++) {
+		for(int i=0; i<trimestre; i++) {
+			for(int j = 0; j<alumnos; j++) {
 				System.out.print("Introduce las notas del trimestre:");
 				double nota = sc.nextDouble();
 				notas[i][j] = nota;
@@ -20,7 +20,7 @@ public class Ej7 {
 		int suma1 = 0;
 		int suma2 = 0;
 		int suma3 = 0;
-		for(int i = 0; i<5; i++) {
+		for(int i = 0; i<alumnos; i++) {
 			suma1+= notas[0] [i];
 			suma2+= notas[1] [i];
 			suma3+= notas[2] [i];
@@ -31,7 +31,7 @@ public class Ej7 {
 		 int sumaAlumno3= 0;
 		 int sumaAlumno4 = 0;
 		 int sumaAlumno5 = 0;
-		for(int i = 0; i<3;i++) {
+		for(int i = 0; i<trimestre;i++) {
 			sumaAlumno1 += notas [i] [0];
 			sumaAlumno2 += notas [i] [1];
 			sumaAlumno3 += notas [i] [2];
