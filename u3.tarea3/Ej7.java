@@ -1,4 +1,4 @@
-package u3.tarea3;
+package daw1t;
 import java.util.Scanner;
 public class Ej7 {
 	public static void main(String[] args) {
@@ -42,15 +42,15 @@ public class Ej7 {
 			
 		}
 		
-		 double media1 =  suma1/5;
-		 double media2= suma2/5;
-		 double media3 = suma3/5;
+		 double media1 =   (double) suma1/5;
+		 double media2=  (double) suma2/5;
+		 double media3 =  (double)suma3/5;
 		 
-		double  mediaAlumno1 = sumaAlumno1/3;
-		double  mediaAlumno2 = sumaAlumno2/3;
-		double  mediaAlumno3 = sumaAlumno3/3;
-		double  mediaAlumno4 = sumaAlumno4/3;
-		double  mediaAlumno5 = sumaAlumno5/3;
+		double  mediaAlumno1 =  (double)sumaAlumno1/3;
+		double  mediaAlumno2 =  (double) sumaAlumno2/3;
+		double  mediaAlumno3 =  (double) sumaAlumno3/3;
+		double  mediaAlumno4 =  (double) sumaAlumno4/3;
+		double  mediaAlumno5 =  (double)sumaAlumno5/3;
 		 
 		 System.out.println("La media del grupo en el  primer trimestre es de: " + media1);
 		 System.out.println("La media del grupo en el  segundo trimestre es de: " + media2);
@@ -83,3 +83,4 @@ public class Ej7 {
 	}
 
 }
+
